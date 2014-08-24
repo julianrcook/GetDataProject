@@ -8,8 +8,8 @@ run_analysis.R merges the training and test data:
 ### 1. Merges the training and test sets to create one data set 
 
 The training files that are loaded are
-```# list.files("train", pattern = "train")
-#[1] "subject_train.txt" "X_train.txt"       "y_train.txt" ```
+``` list.files("train", pattern = "train")
+ "subject_train.txt" "X_train.txt"       "y_train.txt" ```
 
 There are six activities
 ```> levels(as.factor(y_train$V1))
@@ -26,8 +26,8 @@ There are 30 subjects (people) listed in subject_train
 
 We then load the test files in the same way
 The test files that are loaded are
-```# list.files("test", pattern = "test")
-#[1] "subject_test.txt" "X_test.txt"       "y_test.txt" ```
+``` list.files("test", pattern = "test")
+[1] "subject_test.txt" "X_test.txt"       "y_test.txt" ```
 
 For both sets of files the columns are all bound together using cbind, then we row  bind (rbind) the two datasets
 like this
