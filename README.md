@@ -9,7 +9,7 @@
 
 ### To run_analysis.R:
 * Set the path to the UCI HAR Dataset.
-```> setwd("~R/cleandata/projectfiles/UCI_HAR_Dataset/")'''
+```> setwd("~R/cleandata/projectfiles/UCI_HAR_Dataset/")```
 * Run run_analysis.R script.
 ```> source("./run_analysis.R")```
 
