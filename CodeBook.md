@@ -39,9 +39,9 @@ The test files that are loaded are
 For both sets of files the columns are all bound together using cbind, then we row  bind (rbind) the two datasets
 like this
 
-```df_train_files<-cbind(subject_train,y_train,X_train)
+``` df_train_files<-cbind(subject_train,y_train,X_train)
 df_test_files<-cbind(subject_test,y_test,X_test)
-df_train_and_test<-rbind(df_train_files,df_test_files)```
+df_train_and_test<-rbind(df_train_files,df_test_files) ```
 
 ## 2. Reads file features.txt and extracts only the measurements on the mean and standard deviation for each measurement.
 
