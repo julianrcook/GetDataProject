@@ -27,7 +27,7 @@ There are 30 subjects (people) listed in subject_train
 
 ```> levels(as.factor(subject_train$V1))
  [1] "1"  "3"  "5"  "6"  "7"  "8"  "11" "14" "15" "16" "17" "19" "21" "22" "23" "25" "26" "27" "28"
-[20] "29" "30"```
+[20] "29" "30"  ```
 
 We then load the test files in the same way
 The test files that are loaded are
@@ -42,6 +42,7 @@ like this
  df_train_files<-cbind(subject_train,y_train,X_train) 
 
  df_test_files<-cbind(subject_test,y_test,X_test) 
+ 
  df_train_and_test<-rbind(df_train_files,df_test_files) 
 
 
