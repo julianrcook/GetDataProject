@@ -21,7 +21,7 @@ There are six activities listed in y_train
 
 These map to the following Descriptions
 
- y_train = 1 WALKING,2 WALKING_UPSTAIRS,3 WALKING_DOWNSTAIRS,4 SITTING,5 STANDING,6 LAYING
+ y_train = 1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING, 6 LAYING
  
 There are 30 subjects (people) listed in subject_train
 
@@ -72,9 +72,9 @@ This is done with a merge
 
 where dt_activity_labels & dt_mean_sd are the activity labels and data for mean and std only
 
-The result is saved as tidy_dataset_with_labels.csv, the data frame such that the first column contains subject IDs, the second column activity names, the third activity_id and the last 66 columns are measurements. Subject IDs are integers between 1 and 30 inclusive. 
+The result is exported as tidy_dataset_with_labels.csv, where the first three cols contain descriptions of subject and activity type and the last 66 columns are measurements. Subject IDs are integers between 1 and 30 inclusive. 
 
 ## 5. Finally, the script creates a 2nd, independent tidy data set with the average of each measurement for each activity and each subject.
 
-  The result is saved as tidy_dataset_with_means.txt, a 180 by 69 data frame, where as before, the first column contains subject IDs, the second column contains activity names, the third column is activity_id, and then the averages for each of the 66 tests that were on either mean or STD.
+  The summarized result is exported as tidy_dataset_with_means.txt, a 180 by 69 csv, where as before, the first column contains subject IDs, the second column contains activity names, the third column is activity_id, and then the averages for each of the 66 tests that were on either mean or STD.
 
