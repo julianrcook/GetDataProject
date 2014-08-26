@@ -19,7 +19,7 @@ There are six activities listed in y_train
 ```> levels(as.factor(y_train$V1))
 [1] "1" "2" "3" "4" "5" "6"```
 
-These map to the following activities Descriptions
+These map to the following Descriptions
 
  y_train = 1 WALKING,2 WALKING_UPSTAIRS,3 WALKING_DOWNSTAIRS,4 SITTING,5 STANDING,6 LAYING
  
@@ -76,7 +76,5 @@ The result is saved as tidy_dataset_with_labels.csv, the data frame such that th
 
 ## 5. Finally, the script creates a 2nd, independent tidy data set with the average of each measurement for each activity and each subject.
 
-  The result is saved as tidy_dataset_with_means.txt, a 180x68 data frame, where as before, the first column contains subject IDs, the second
-column contains activity names, the third column is activity_id, and then the averages for each of the 66 attributes are in columns 3...68. There are
-30 subjects and 6 activities, thus 180 rows in this data set with averages.
+  The result is saved as tidy_dataset_with_means.txt, a 180 by 69 data frame, where as before, the first column contains subject IDs, the second column contains activity names, the third column is activity_id, and then the averages for each of the 66 tests that were on either mean or STD.
 
